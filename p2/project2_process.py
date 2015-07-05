@@ -20,7 +20,6 @@ def check_street_type(street_name):
 
 
 def update_name(name, mapping):
-    return name
     streettype = street_type_re.search(name)
     #Cannot use replace() as the likes of "Station St" would be corrupted
     #Therefore use rfind to find first instance from the right
